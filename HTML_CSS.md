@@ -150,4 +150,68 @@ PAra colocar un titulo se usa la etiqueta **title** este se vera reflejado en la
 ~~~
 
 ## CSS - Cascading Style Sheets
+Tenemos el Siguiete HTML
+~~~
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <p>Hola Mundo!</p>
+    <p id="parrafo">Este es un párrafo</p>
+    <span class="etiqueta">Este es un span</span>
+    <br />
+    <span class="etiqueta">Este es un segundo span</span>
+    <br />
+    <span class="etiqueta">Este es un tercer span</span>
+</body>
+</html>
+~~~
+Y asignamos el siguiete CSS a este
+~~~
 
+body {
+    background-color: #efefef;
+    color: #7800AC /* Color por defecto de las letras del body*/
+}
+
+#parrafo {
+    color: #ff0000;
+}
+
+.etiqueta {
+    color:#00aa00;
+}
+~~~
+CUando se crea un div así en el HTML
+~~~
+<body>
+    <div class="caja">Hola Mundo!</div>
+</body>
+~~~
+Y esta es su configuracion en CC
+~~~
+
+body {
+    background-color: #efefef;
+}
+
+.caja {
+    margin: 8px; /*Permite separar la margen del body hacia la Der*/
+    padding: 8px; /*Permite tomar el contenido y enviarlo mas hacia el centro*/
+    border-style: solid; /*Tipo de linea de la caja*/
+    border-width: 8px; /*ncho de la linea de la caja*/
+    border-color: #faa; /*Color del borde de la caja*/
+    border-left: 6px solid #afa; /*Para reemplazar el de la izq*/
+    /*top=arriba; bottom=abajo; right=Der*/
+    background-color: #aaf; /*Color de fondo*/
+    border-radius: 8px; /*curvatura en las cajas, suavizado*/
+    height: 20px; /*Alto de la caja*/
+    width: 100px; /*Ancho de la caja*/
+    color:#ffffff; /*Color de texto*/
+}
+~~~
