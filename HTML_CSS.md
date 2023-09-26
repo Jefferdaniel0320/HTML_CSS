@@ -187,14 +187,14 @@ body {
     color:#00aa00;
 }
 ~~~
-CUando se crea un div así en el HTML
+Cuando se crea un div así en el HTML
 ~~~
 <body>
     <div class="caja">Hola Mundo!</div>
 </body>
 ~~~
 Y esta es su configuracion en CC
-~~~
+~~~z
 
 body {
     background-color: #efefef;
@@ -204,7 +204,7 @@ body {
     margin: 8px; /*Permite separar la margen del body hacia la Der*/
     padding: 8px; /*Permite tomar el contenido y enviarlo mas hacia el centro*/
     border-style: solid; /*Tipo de linea de la caja*/
-    border-width: 8px; /*ncho de la linea de la caja*/
+    border-width: 8px; /*ancho de la linea de la caja*/
     border-color: #faa; /*Color del borde de la caja*/
     border-left: 6px solid #afa; /*Para reemplazar el de la izq*/
     /*top=arriba; bottom=abajo; right=Der*/
@@ -214,4 +214,89 @@ body {
     width: 100px; /*Ancho de la caja*/
     color:#ffffff; /*Color de texto*/
 }
+~~~
+Modificaciones de Links en CSS
+~~~
+p {
+    font-family: "Verdana"; /*Tipo de letra*/
+    font-weight: 100; /*Negrita*/
+    font-style: italic; /*Cursividad o estilo de letra*/
+    font-size: 20px; /*Tamaño de letra*/
+    color: #222fff;
+    text-align: justify;
+    text-indent: 15px;/*Identar*/
+    line-height: 1.7; /*Con esto validamos el interlineado*/
+    word-spacing: 10px; /*Espacio entre las palabras*/
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3); /*Este crea una sombra, el primero lo mueve en x, el segundo en y y el tercero es el nivel de opacidad*/
+
+}
+
+a {
+    text-decoration: overline; /*Para colocar el subrayado encima del texto*/
+    text-decoration: line-through; /*Para colocar el subrayado en medio del texto*/
+    text-decoration: underline; /*Para colocar el subrayado en la parte de abajo del texto*/
+    text-decoration: none; /*Para quitar Subrayado*/
+    
+    text-transform: lowercase; /* Cambiar a minuscula*/
+    text-transform: uppercase; /* Cambiar a mayuscula*/
+    text-transform: capitalize; /* Cambiar la primera letra a Mayuscula*/
+
+    letter-spacing: 3px; /*Separacion entre letras*/
+}
+~~~
+Parte 2
+~~~
+a {
+    color: #2ac3de;
+    font-size: 50px;
+    font-family: fantasy;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+a:link {
+    color: #9ece6a; /*Este color es cuando no ha sido visitado*/
+    text-decoration: none;
+}
+a:visited{
+    color: #2ac3de; /*Cuando ha sido visitado*/
+}
+a:hover {
+    color: #b4f9f8; /*Cuando se pasa el mouse por encima*/
+    text-decoration: underline;
+    background-color: #25262b;
+}
+a:active {
+    color: #ff9e64; /*Cuando damos click*/
+}
+~~~
+Listas
+~~~
+body {
+    background-color: #1a1b26;
+    color: #9ece6a;
+    font-size: 30px;
+}
+
+/* ul li { Forma de seleccionar al hijo */
+    /* list-style-type: lower-greek; Forma simbolo de la lista no ordenada */
+    /*Puede ser circle, square, upper-roman, lower-alpha, lower-greek*/
+/* } */
+
+ul { /*Padre*/
+    list-style-type: none;
+    background-color: #414868;
+    border: solid 1px #9aa5ce;
+    border-radius: 5px;
+    padding-left: 0px;
+}
+
+li { /*Hijo*/
+    border-bottom: solid 1px #9aa5ce;
+    padding: 10px;
+}
+~~~
+Tablas
+~~~
+
 ~~~
