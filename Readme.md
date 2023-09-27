@@ -272,12 +272,6 @@ a:active {
 ~~~
 Listas
 ~~~
-body {
-    background-color: #1a1b26;
-    color: #9ece6a;
-    font-size: 30px;
-}
-
 /* ul li { Forma de seleccionar al hijo */
     /* list-style-type: lower-greek; Forma simbolo de la lista no ordenada */
     /*Puede ser circle, square, upper-roman, lower-alpha, lower-greek*/
@@ -298,5 +292,139 @@ li { /*Hijo*/
 ~~~
 Tablas
 ~~~
+table {
+    width: 80%; /*Ancho en toda la pag*/
+    background-color: #24283b;
+    border-collapse: collapse; /*Quitar borde entre las columnas*/
+}
 
+tr:nth-child(even) { /*Seleccionar filas de forma par o impar*/
+    /*even => Primera fila; odd => Segunda fila*/
+    background-color: #565f89;
+}
+
+td {
+    border: 1px solid #24283b;
+    padding: 8px;
+}
+
+table th { /*Cabecera de la tabla*/
+    background-color: #0f0f14;
+    color: white;
+    text-align: left; /*Aliar texto a la izq*/
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+~~~
+Display
+~~~
+p {
+    /*Con esto convertimos en lineas todos*/
+    display: inline;
+}
+
+span{
+    /* con este convertimos en bloques */
+    display: block;
+}
+~~~
+Max-width y position
+~~~
+p {
+    max-width: 400px; /*Ancho maximo, no deja hacer scroll*/
+    /*width: 500px; /*Ancho maximo pero permite hacer scroll*/
+    background-color: #9ece6a;
+    margin: auto; /*Margen automatico*/
+    /*position: relative; /*Nueva posicion*/
+    position: fixed; /*Posicion fija, sirve para los menus estaticos*/
+    left: 0px;
+    right: 0px;
+    top: 0px; /*Corta de arriba hacia abajo*/
+    bottom: 690px; /*Corta de abajo hacia arriba*/
+}
+
+div {
+    color: #9ece6a;
+}
+~~~
+Overflow
+~~~
+#over {
+    width: 100px;
+    height: 100px;
+    /* overflow: visible;  /*valor por defecto*/
+    /*overflow: hidden;  /*corta lo que esta fuera de la caja*/
+    /*overflow: scroll; /*Scroll*/
+    /*overflow: auto; /*Scroll automatico*/
+    /*overflow-y: auto; /*coloca el scroll para el eje vertical*/
+    overflow-x: auto; /*coloca el scroll para el eje horizontal */
+}
+~~~
+float, mas selectores y opacidad
+~~~
+body {
+    background-color: #10111c;
+    /* color: #9ece6a; */
+    color: #aa0505;
+    font-size: 30px;
+}
+
+img {
+    float: right;
+}
+
+img:hover { /*PAra resaltar*/
+    opacity: 0.9; /*0 trasparente, 1 solido*/
+}
+
+div p {
+    color: #b97d10;
+    font-size: 20px;
+}
+~~~
+Barra de Navegacion
+~~~
+body {
+    background-color: #1a1b26;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none; /*eliminar puntos de la lista*/
+    margin: 0; /*reiniciar el margen a cero*/
+    padding: 0; /*Reiniciar el contenido de la lista*/
+    overflow: hidden; 
+    position: fixed; /*Posicion fija*/
+    top: 0; /*Se queda arriba*/
+    left: 0; /*correr hacia la izq*/
+    width: 100%; /*El ancho*/
+    background-color: #24283b; /*Barra*/
+}
+
+li {
+    float: left; /*Pega los elementes horizontalmente*/
+}
+
+li a {
+    display: block;
+    color: #9ece6a;
+    text-align: center;
+    padding: 14px; /*Separacion entre elementos*/
+    text-decoration: none;
+}
+
+li:hover { /*Sensacion de pasar mouse por encima*/
+    background-color: rgba(0, 0, 0, 0.3); /*Trasparencia, la ultima coma es el porcentaje*/
+}
+
+.active { /*Color al link inicio*/
+    background-color: #565f89;
+}
+
+.context {
+    margin-top: 60px;
+    color: #a9b1d6;
+}
 ~~~

@@ -1,0 +1,16 @@
+body {
+    background-color: #1a1b26;
+    color: #9ece6a;
+    color: #2ac3de;
+    font-size: 30px;
+}
+
+p {
+    /*Con esto convertimos en lineas todos*/
+    display: inline;
+}
+
+span{
+    /* con este convertimos en bloques */
+    display: block;
+}

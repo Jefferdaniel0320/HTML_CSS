@@ -1,0 +1,48 @@
+body {
+    background-color: #1a1b26;
+    color: #9ece6a;
+    font-size: 18px;
+}
+
+.dropdown-btn {
+    background-color: #565f89; /*Color inicial del boton*/
+    color: #cfc9c2; /*Color de letra*/
+    padding: 18px; /*espacio*/
+    font-size: 18px; /*Tamaño de letra*/
+    border: none; /*Quitar borde*/
+    cursor: pointer; /*CUando el cursor pasa por envia se convierte en mano*/
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /*Esconder los links*/
+    position: absolute; /*Es deacuerdo al boton, que es el padre*/
+    background-color: #565f89;
+    min-width: 160px; /*Ancho de la caja de los links*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*sombra*/
+}
+
+.dropdown-content a { /*combinacion de los links de la clase*/
+    color: #cfc9c2;
+    padding: 10px 10px; /*El primero es espacio en y y el segundo en x*/
+    text-decoration: none; 
+    display: block; /*Para organizar hacia abajo*/
+}
+
+.dropdown-content a:hover { /*A todo lo que este en "dropdown-content" y pasar el mouse por encima*/
+    background-color: #24283b;
+    color: #cfc9c2;
+}
+
+.dropdown:hover .dropdown-btn { /*Cuando este enccima del boton*/
+    background-color: #24283b;
+
+}
+
+.dropdown:hover .dropdown-content { /*Para mostrar el contenido de la lista.*/
+    display: block;
+}
