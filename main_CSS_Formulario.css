@@ -25,6 +25,7 @@ input[type=text] { /*Así se selecciona todos los input de tipo texto*/
 input[type=submit] {
     width: 100%;
     background-color: #9ece6a;
+    font-size: 25px;
     color: #1a1b26;
     padding: 14px 20px;
     margin: 8px 0;

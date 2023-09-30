@@ -416,7 +416,7 @@ li a {
 }
 
 li:hover { /*Sensacion de pasar mouse por encima*/
-    background-color: rgba(0, 0, 0, 0.3); /*Trasparencia, la ultima coma es el porcentaje*/
+    background-color: rgba(0, 0, 0, 0.1); /*Trasparencia, la ultima coma es el porcentaje*/
 }
 
 .active { /*Color al link inicio*/
@@ -427,4 +427,7 @@ li:hover { /*Sensacion de pasar mouse por encima*/
     margin-top: 60px;
     color: #a9b1d6;
 }
+~~~
+Formularios
+~~~
 ~~~
