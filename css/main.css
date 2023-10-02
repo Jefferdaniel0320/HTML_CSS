@@ -2,4 +2,87 @@ body {
     background-color: #1a1b26;
     color: #9ece6a;
     font-size: 18px;
+    text-align: center;
 }
+
+table {
+    width: 50%; /*Ancho en toda la pag*/
+    background-color: #24283b;
+    border-collapse: collapse; /*Quitar borde entre las columnas*/
+}
+
+table th { /*Cabecera de la tabla*/
+    background-color: #0f0f14;
+    color: white;
+    text-align: center; /*Aliar texto a la izq*/
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;   
+}
+
+tr:nth-child(even) { /*Seleccionar filas de forma par o impar*/
+    /*even => Primera fila; odd => Segunda fila*/
+    background-color: #565f89;
+}
+
+td {
+    border: 1px solid #24283b;
+    padding: 8px;
+}
+
+a:link {
+    /*color: #9ece6a; /*Este color es cuando no ha sido visitado*/
+    color: #2ac3de; /*Cuando ha sido visitado*/
+    text-decoration: none;
+}
+a:visited{
+    color: #ff9e64; /*Cuando ha sido visitado*/
+}
+
+ul {
+    list-style-type: none; /*eliminar puntos de la lista*/
+    margin: 0; /*reiniciar el margen a cero*/
+    padding: 0; /*Reiniciar el contenido de la lista*/
+    overflow: hidden; 
+    position: fixed; /*Posicion fija*/
+    top: 0; /*Se queda arriba*/
+    left: 0; /*correr hacia la izq*/
+    width: 100%; /*El ancho*/
+    background-color: #24283b; /*Barra*/
+}
+
+li {
+    float: left; /*Pega los elementes horizontalmente*/
+}
+
+li a {
+    display: block;
+    color: #9ece6a;
+    text-align: center;
+    padding: 14px; /*Separacion entre elementos*/
+    text-decoration: none;
+}
+
+li:hover { /*Sensacion de pasar mouse por encima*/
+    background-color: rgba(0, 0, 0, 0.3); /*Trasparencia, la ultima coma es el porcentaje*/
+}
+
+.content {
+    margin-top: 60px;
+}
+
+ul a:visited {
+    /*color: #9ece6a; /*Este color es cuando no ha sido visitado*/
+    color: #9ece6a; /*Cuando ha sido visitado*/
+    text-decoration: none;
+}
+
+ul a:link {
+    /*color: #9ece6a; /*Este color es cuando no ha sido visitado*/
+    color: #9ece6a; /*Cuando ha sido visitado*/
+    text-decoration: none;
+}
+
+/*.tabla1 {}*/
+/*.tabla2 {}*/

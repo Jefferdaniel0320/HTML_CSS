@@ -430,4 +430,71 @@ li:hover { /*Sensacion de pasar mouse por encima*/
 ~~~
 Formularios
 ~~~
+.box {
+    background-color: #1a1b26;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px rgba(158, 206, 106, 0.1);
+}
+
+input[type=text] { /*Así se selecciona todos los input de tipo texto*/
+    background-color: #c0caf5;
+    width: 100%; /*Ancho de los campos de texgto*/
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #9ece6a;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #9ece6a;
+    font-size: 25px;
+    color: #1a1b26;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea { /*Así se selecciona todos los input de tipo texto*/
+    background-color: #c0caf5;
+    width: 100%; /*Ancho de los campos de texgto*/
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #9ece6a;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+~~~
+Backgrounds
+~~~
+.fondo {
+    background-color: #565f89;
+    height: 500px;
+    /*El siguiente es para agregar un relleno de imagen al DIV*/
+    background-image: url('https://los40.cl/wp-content/uploads/2021/06/radioformulaqr-768x432.jpg');
+    background-repeat: no-repeat; /*Repetir imagen en el DIV*/
+    background-position: right bottom; /*Esto mueve la imagen*/
+    background-attachment: fixed; /*Scroll para mover la imagen con el texto, fixed para solo mover el texto*/
+    background-size: cover; /*Para ajustar la imagen al div*/
+}
+~~~
+Fondos con Gradiente
+~~~
+.fondo {
+    /*Con el "linear-gradient" se puede mezcalr colocres, colocar desde un angulo preciso*/
+    /*Se puede usar"to bottom right" o por angulo con deg""*/
+    /*Se puede usar mas de un color*/
+    background-image:  linear-gradient(to bottom right, red, blue);
+    /*Para colocar como si fuera un barrilete*/
+    background-image: repeating-linear-gradient(to bottom right, red, blue, 20%, green 30%);
+}
+~~~
+Sombras
+~~~
 ~~~

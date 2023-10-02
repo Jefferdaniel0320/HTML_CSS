@@ -9,5 +9,5 @@ body {
     /*Con el "linear-gradient" se puede mezcalr colocres, colocar desde un angulo preciso*/
     /*Se puede usar"to bottom right" o por angulo con deg""*/
     /*Se puede usar mas de un color*/
-    background-image: repeating-linear-gradient(to bottom right, red, blue, 20%, green 30%);
+    background-image: linear-gradient(to bottom right, #9ece6a, #1a1b26);
 }
