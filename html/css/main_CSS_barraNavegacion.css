@@ -1,0 +1,41 @@
+body {
+    background-color: #1a1b26;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none; /*eliminar puntos de la lista*/
+    margin: 0; /*reiniciar el margen a cero*/
+    padding: 0; /*Reiniciar el contenido de la lista*/
+    overflow: hidden; 
+    position: fixed; /*Posicion fija*/
+    top: 0; /*Se queda arriba*/
+    left: 0; /*correr hacia la izq*/
+    width: 100%; /*El ancho*/
+    background-color: #24283b; /*Barra*/
+}
+
+li {
+    float: left; /*Pega los elementes horizontalmente*/
+}
+
+li a {
+    display: block;
+    color: #9ece6a;
+    text-align: center;
+    padding: 14px; /*Separacion entre elementos*/
+    text-decoration: none;
+}
+
+li:hover { /*Sensacion de pasar mouse por encima*/
+    background-color: rgba(0, 0, 0, 0.3); /*Trasparencia, la ultima coma es el porcentaje*/
+}
+
+.active { /*Color al link inicio*/
+    background-color: #565f89;
+}
+
+.context {
+    margin-top: 60px;
+    color: #a9b1d6;
+}

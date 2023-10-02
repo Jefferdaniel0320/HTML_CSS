@@ -1,0 +1,27 @@
+body {
+    background-color: #1a1b26;
+}
+
+a {
+    color: #2ac3de;
+    font-size: 50px;
+    font-family: fantasy;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+a:link {
+    color: #9ece6a; /*Este color es cuando no ha sido visitado*/
+    text-decoration: none;
+}
+a:visited{
+    color: #2ac3de; /*Cuando ha sido visitado*/
+}
+a:hover {
+    color: #b4f9f8; /*Cuando se pasa el mouse por encima*/
+    text-decoration: underline;
+    background-color: #25262b;
+}
+a:active {
+    color: #ff9e64; /*Cuando damos click*/
+}

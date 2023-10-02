@@ -1,0 +1,19 @@
+body {
+    background-color: #10111c;
+    /* color: #9ece6a; */
+    color: #aa0505;
+    font-size: 30px;
+}
+
+img {
+    float: right;
+}
+
+img:hover { /*PAra resaltar*/
+    opacity: 0.9; /*0 trasparente, 1 solido*/
+}
+
+div p {
+    color: #b97d10;
+    font-size: 20px;
+}

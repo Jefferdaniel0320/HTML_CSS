@@ -1,0 +1,13 @@
+body {
+    background-color: #1a1b26;
+    color: #1a1b26;
+    /* color: #9ece6a; */
+    font-size: 18px;
+}
+
+.fondo {
+    /*Con el "linear-gradient" se puede mezcalr colocres, colocar desde un angulo preciso*/
+    /*Se puede usar"to bottom right" o por angulo con deg""*/
+    /*Se puede usar mas de un color*/
+    background-image: linear-gradient(to bottom right, #9ece6a, #1a1b26);
+}

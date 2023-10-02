@@ -1,0 +1,16 @@
+body {
+    background-color: #1a1b26;
+    color: #9ece6a;
+    font-size: 20px;
+}
+
+#over {
+    width: 100px;
+    height: 100px;
+    /* overflow: visible;  /*valor por defecto*/
+    /*overflow: hidden;  /*corta lo que esta fuera de la caja*/
+    /*overflow: scroll; /*Scroll*/
+    /*overflow: auto; /*Scroll automatico*/
+    /*overflow-y: auto; /*coloca el scroll para el eje vertical*/
+    overflow-x: auto; /*coloca el scroll para el eje horizontal */
+}
