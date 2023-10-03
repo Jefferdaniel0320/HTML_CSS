@@ -1,0 +1,69 @@
+body {
+    background-color: #565f89;
+    color: #9ece6a;
+    font-size: 18px;
+    text-align: center;
+}
+
+.tarjeta {
+    background-color: #1a1b26;
+    margin: auto;
+    width: 60%;
+    height: 84vh;
+    border-radius: 10px;
+    padding: 10px;
+}
+button {
+    background-color: #9ece6a;
+    padding: 10px;
+    margin: auto;
+    margin-right: 75px;
+    margin-left: 75px;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ff9e64;
+}
+
+hr {
+    border-color: #9ece6a;
+    border-width: 3px;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+    margin: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+    box-shadow: 10px -10px 10px rgba(158, 206, 106, 0.5);
+    border-radius: 10px;
+    border: none;
+}
+
+.parrafo {
+    background-color: #565f89;
+    margin: auto;
+    text-align: justify;
+    /*margin-top: 10px; /* Margen superior de 10px */
+    margin-right: 50px; /* Margen derecho de 20px */
+    /*margin-bottom: 10px; /* Margen inferior de 10px */
+    margin-left: 50px; /* Margen izquierdo de 20px */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+table {
+    margin: auto;
+}
+
+h3 {
+    color: #ff9e64;
+}
+
+.derechosR {
+    font-size: 10px;
+}
