@@ -1,0 +1,26 @@
+body {
+    background-color: #1a1b26;
+    color: #9ece6a;
+    font-size: 18px;
+}
+
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 150px;
+    height: 100px;
+    background-color: #565f89;
+    box-shadow: 1px 2px 2px rgb(180, 249, 248, 0.8);
+    /* transition: width 0.3s; */
+    transition: 0.3s; /*Este tiempo es el tiempo que demora hacer la transicion*/
+    transition-delay: 0.5s; /*Delay en la animacion*/
+    /*Otra forma de hacer la transicion y el delay en una sola linea*/
+    /* transition: 0.3s 0.5s; */
+}
+
+.box:hover {
+    /* width: 200px; */
+    transform: scale(1.05,1.05);
+    background-color: #1a1b26;
+}

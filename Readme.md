@@ -497,4 +497,59 @@ Fondos con Gradiente
 ~~~
 Sombras
 ~~~
+.box {
+    /*cuando se agrega el inset el elemento esta hundido, sin este es como si flotara*/
+    box-shadow: 0px 1px 2px rgba(158, 206, 106, 0.5) inset;
+}
+.box2 {
+    box-shadow: 0px 1px 2px rgba(158, 206, 106, 0.5);
+}
+
+.text {
+    color: #1a1b26;
+    font-size: 30px ;
+    /* Esto es para darle sombra al texto */
+    text-shadow: 0px 1px 4px rgba(158, 206, 106, 0.8);
+}
+~~~
+Trasformaciones en 2D y 3D
+~~~
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 150px;
+    height: 100px;
+    background-color: #565f89;
+    box-shadow: 1px 2px 2px rgb(180, 249, 248, 0.8);
+    transform: rotate(20deg); /*Girar 20grados */
+    transform: translate(50px, 10px); /*Trasladar*/
+    transform: scale(1.05, 1.05); /*Escalar*/
+    transform: skewX(-10deg); /*Retorcer*/
+    /*Trasformaciones en 3D*/
+    transform: rotateX(20deg); /*Este rota con el eje X y Y*/
+}
+~~~
+Transiciones animadas
+~~~
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 150px;
+    height: 100px;
+    background-color: #565f89;
+    box-shadow: 1px 2px 2px rgb(180, 249, 248, 0.8);
+    /* transition: width 0.3s; */
+    transition: 0.3s; /*Este tiempo es el tiempo que demora hacer la transicion*/
+    transition-delay: 0.5s; /*Delay en la animacion*/
+    /*Otra forma de hacer la transicion y el delay en una sola linea*/
+    /* transition: 0.3s 0.5s; */
+}
+
+.box:hover {
+    /* width: 200px; */
+    transform: scale(1.05,1.05);
+    background-color: #1a1b26;
+}
 ~~~

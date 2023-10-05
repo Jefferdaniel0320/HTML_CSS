@@ -1,0 +1,20 @@
+body {
+    background-color: #1a1b26;
+    color: #9ece6a;
+    font-size: 18px;
+}
+
+.box {
+    /*cuando se agrega el inset el elemento esta hundido, sin este es como si flotara*/
+    box-shadow: 0px 1px 2px rgba(158, 206, 106, 0.5) inset;
+}
+.box2 {
+    box-shadow: 0px 1px 2px rgba(158, 206, 106, 0.5);
+}
+
+.text {
+    color: #1a1b26;
+    font-size: 30px ;
+    /* Esto es para darle sombra al texto */
+    text-shadow: 0px 1px 4px rgba(158, 206, 106, 0.8);
+}

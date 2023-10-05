@@ -1,0 +1,21 @@
+body {
+    background-color: #1a1b26;
+    color: #9ece6a;
+    font-size: 18px;
+}
+
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 150px;
+    height: 100px;
+    background-color: #565f89;
+    box-shadow: 1px 2px 2px rgb(180, 249, 248, 0.8);
+    transform: rotate(20deg); /*Girar 20grados */
+    transform: translate(50px, 10px); /*Trasladar*/
+    transform: scale(1.05, 1.05); /*Escalar*/
+    transform: skewX(-10deg); /*Retorcer*/
+    /*Trasformaciones en 3D*/
+    transform: rotateX(20deg); /*Este rota con el eje X y Y*/
+}
