@@ -1,0 +1,14 @@
+body {
+    background-color: #1a1b26;
+    color: #ff9e64;
+}
+
+.grid {
+    display: grid; /*Activar todo como grilla, todo lo que contenga ese elemento */
+    display: inline-grid; /*En vez de usar todo el ancho, solo usa el espacio en sus elementos*/
+}
+
+.element {
+    background-color: #24283b;
+    padding: 10px 15px;
+}

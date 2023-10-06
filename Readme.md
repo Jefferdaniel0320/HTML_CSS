@@ -149,7 +149,7 @@ PAra colocar un titulo se usa la etiqueta **title** este se vera reflejado en la
 </html>
 ~~~
 
-## CSS - Cascading Style Sheets
+### CSS - Cascading Style Sheets
 Tenemos el Siguiete HTML
 ~~~
 <!DOCTYPE html>
@@ -551,5 +551,73 @@ Transiciones animadas
     /* width: 200px; */
     transform: scale(1.05,1.05);
     background-color: #1a1b26;
+}
+~~~
+Ejercicios de Cajas
+~~~
+body {
+    background-color: #565f89;
+    color: #cfc9c2;
+}
+
+.box {
+    background-color: #1a1b26;
+    box-shadow: 0px 2px 2px rgb(180, 249, 248, 0.8);
+    margin: 10px 15px; /*Separacion entre cajas*/
+    width: 200px; /*Ancho maximo*/
+    padding: 10px 15px; /*expande margen vertical horizontal*/
+    text-align: center;
+} 
+
+.red {
+    border-left: 2px solid red;
+}
+
+.red:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.green {
+    border-left: 2px solid green;
+}
+
+.green:hover {
+    box-shadow: 0px 2px 8px rgb(180, 249, 248, 0.8);
+}
+
+.blue {
+    border-left: 2px solid blue;
+}
+
+.blue:hover {
+    background-color: #414868;
+}
+~~~
+### CSS Grid
+ es una propiedad CSS que se utiliza para crear un contenedor que sigue el modelo de diseño de cuadrícula (grid layout). Con esta propiedad, puedes organizar elementos en filas y columnas en una cuadrícula, lo que te brinda un alto grado de control sobre el diseño de tu página web.
+~~~
+body {
+    background-color: #1a1b26;
+    color: #ff9e64;
+}
+
+.grid {
+    display: grid; /*Activar todo como grilla, todo lo que contenga ese elemento */
+    display: inline-grid; /*En vez de usar todo el ancho, solo usa el espacio en sus elementos*/
+}
+
+.element {
+    background-color: #24283b;
+    padding: 10px 15px;
+}
+~~~
+Columnas y filas
+~~~
+.grid {
+    display: grid; /*Activar todo como grilla, todo lo que contenga ese elemento */
+    grid-template-rows: 50px 50px 50px; /*Esto define los px de las filas, aca solo se definieron 3 los demas quedan por defecto*/
+    /*grid-template-columns: 100px 50px 50px; /*Define tamaño de Col*/
+    grid-template-columns: 1fr 2fr 3fr; /*Este utiliza la fracciones de la pagina*/
+    /*Tambine se puede usar combinado como "2rem 20% 1fr 2fr"*/
 }
 ~~~

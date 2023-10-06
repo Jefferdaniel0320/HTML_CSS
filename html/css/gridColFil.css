@@ -1,0 +1,17 @@
+body {
+    background-color: #1a1b26;
+    color: #ff9e64;
+}
+
+.grid {
+    display: grid; /*Activar todo como grilla, todo lo que contenga ese elemento */
+    grid-template-rows: 50px 50px 50px; /*Esto define los px de las filas, aca solo se definieron 3 los demas quedan por defecto*/
+    /*grid-template-columns: 100px 50px 50px; /*Define tamaño de Col*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*Este utiliza la fracciones de la pagina*/
+    /*Tambine se puede usar combinado como "2rem 20% 1fr 2fr"*/
+}
+
+.element {
+    background-color: #24283b;
+    padding: 10px 15px;
+}

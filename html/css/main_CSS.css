@@ -7,7 +7,7 @@ body {
     margin: 8px; /*Permite separar la margen del body hacia la Der*/
     padding: 8px; /*Permite tomar el contenido y enviarlo mas hacia el centro*/
     border-style: solid; /*Tipo de linea de la caja*/
-    border-width: 8px; /*ncho de la linea de la caja*/
+    border-width: 8px; /*Ancho de la linea de la caja*/
     border-color: #faa; /*Color del borde de la caja*/
     border-left: 6px solid #afa; /*Para reemplazar el de la izq*/
     /*top=arriba; bottom=abajo; right=Der*/
