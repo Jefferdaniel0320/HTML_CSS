@@ -621,3 +621,16 @@ Columnas y filas
     /*Tambine se puede usar combinado como "2rem 20% 1fr 2fr"*/
 }
 ~~~
+Tamaño Minimo y Maximo
+~~~
+.grid {
+    display: grid;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-columns: minmax(auto, 50%) 1fr 2fr;
+}
+
+.element {
+    background-color: #24283b;
+    padding: 10px 15px;
+}
+~~~

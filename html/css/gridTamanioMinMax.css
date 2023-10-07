@@ -1,0 +1,15 @@
+body {
+    background-color: #1a1b26;
+    color: #ff9e64;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-columns: minmax(auto, 50%) 1fr 2fr;
+}
+
+.element {
+    background-color: #24283b;
+    padding: 10px 15px;
+}
