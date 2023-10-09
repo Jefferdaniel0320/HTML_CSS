@@ -634,3 +634,80 @@ Tamaño Minimo y Maximo
     padding: 10px 15px;
 }
 ~~~
+Repetir Dimensiones
+~~~
+.grid {
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: repeat(3, 1fr);
+    /*Brechas:*/
+    /*Separacion entre filas de la talbs*/
+    /* grid-row-gap: 20px; */
+    /*Separacion entre columnas de la talbs*/
+    /* grid-column-gap: 10px; */
+    /* Forma de hacerlo en una sola linea */
+    grid-gap: 20px 10px;
+    /* En una sola linea: */
+    /* grid-gap: 10px; */
+}
+
+.element {
+    background-color: #1a1b26;
+}
+
+/*Expandir elementos de la grilla*/
+.header {
+    /*grid-column-start: 1; /*Esto es la cantidad de lineas en las columnas*/
+    /*grid-column-end: 6; /*sexta columna*/
+    /*grid-row-start: 1;
+    grid-row-end: 3;
+    /* Otra forma de hacerlo */
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+~~~
+Asignacion de nombres a la linea de la grilla
+~~~
+.grid {
+    display: grid;
+    /* Asignacion de nombre a la fila */
+    grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 50px [row-2-fin]; 
+    /* Asignacion de nombre a la columna */
+    grid-template-columns: [col-1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] 1fr [col-4-fin];
+    grid-gap: 15px;
+}
+
+.element {
+    background-color: #1a1b26;
+}
+
+/*Expandir elementos de la grilla*/
+.header {
+    grid-column: col-1-inicio / col-4-fin;
+    grid-row: row-1-inicio / row-3-fin;
+}
+~~~
+Asignacion de nombres a la linea de la grilla con Repeat
+~~~
+.grid {
+    display: grid;
+    /* Asignacion de nombre a la fila */
+    grid-template-rows: repeat(2, [row-inicio] 50px [row-fin]); 
+    /* Asignacion de nombre a la columna */
+    grid-template-columns: repeat(3, [col-inicio] 1fr [col-fin]);
+    grid-gap: 15px;
+}
+
+.element {
+    background-color: #1a1b26;
+}
+
+/*Expandir elementos de la grilla*/
+.header {
+    grid-column: col-inicio / col-fin 3;
+    grid-row: row-inicio / row-fin 3;
+}
+~~~
+Areas de Grila y grilla implicita
+~~~
+~~~

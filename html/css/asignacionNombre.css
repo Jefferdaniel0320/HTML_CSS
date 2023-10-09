@@ -1,0 +1,23 @@
+body {
+    background-color: #000;
+    color: #ff9e64;
+}
+
+.grid {
+    display: grid;
+    /* Asignacion de nombre a la fila */
+    grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 50px [row-2-fin]; 
+    /* Asignacion de nombre a la columna */
+    grid-template-columns: [col-1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] 1fr [col-4-fin];
+    grid-gap: 15px;
+}
+
+.element {
+    background-color: #1a1b26;
+}
+
+/*Expandir elementos de la grilla*/
+.header {
+    grid-column: col-1-inicio / col-4-fin;
+    grid-row: row-1-inicio / row-3-fin;
+}
