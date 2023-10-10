@@ -1,0 +1,50 @@
+body {
+    width: 500px;
+    background-color: #1a1b26;
+    color: #9ece6a;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+}
+
+.color {
+    background-color: #565f89;
+}
+
+.primero {
+    /* Con este podemos manipular el orden */
+    order: 1;
+    /*Los valores crecen de manera Dinamica*/
+    flex-grow: 1;
+    /* Primero se organiza en este ancho establecido y luego aplica el flex-grow*/
+    /* flex-basis: 120px; */
+    /* Forma corta de escribirlo, primero el grow seguido de basis */
+    flex: 1 120px;
+}
+
+.segundo {
+    order: 2;
+    flex-grow: 2;
+}
+.tercero {
+    order: 6;
+    flex-grow: 1;
+}
+.cuarto {
+    order: 5;
+    flex-grow: 4;
+    /* Alineacion vertical:| */
+    align-self: flex-end;
+}
+.quinto {
+    order: 4;
+    flex-grow: 1;
+}
+.sexto {
+    order: 3;
+    flex-grow: 1;
+    align-self: center;
+}

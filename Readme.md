@@ -783,5 +783,87 @@ body {
     color: #1a1b26;
 }
 ~~~
+
 ### Flexbox
 Flexbox (Flexible Box Layout) es un modelo de diseño en CSS que se utiliza para crear diseños de páginas web más eficientes y flexibles. Con Flexbox, puedes organizar elementos en una fila o columna, controlar la distribución del espacio disponible, centrar elementos fácilmente y reorganizarlos automáticamente en función del espacio disponible en el contenedor. Es especialmente útil para crear diseños responsivos y complejos, y proporciona un mayor control sobre la alineación y el espaciado de los elementos en una interfaz web. Flexbox simplifica la creación de diseños complejos que antes requerían un CSS más complicado y ofrece una manera más intuitiva de manejar la disposición de elementos en una página web.
+
+Propiedades, justify-content, align-content
+~~~
+body {
+    width: 200px;
+    background-color: #1a1b26;
+    color: #9ece6a;
+}
+
+.flex {
+    display: flex;
+    /* Se puede jugar con la direccion de esta: */
+    /* flex-direction: column; */
+    /* Este hace que salte de linea cuando se supera el width:*/
+    /* flex-wrap: wrap; */
+    /* forma resumidad de la propiedad: */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /* align-items: flex-start; */
+    height: 200px;
+    /* Alinea todo el contenido de forma uniforme: */
+    align-content: space-evenly;  
+
+}
+
+.color {
+    background-color: #565f89;
+}
+~~~
+Manipular el orden de los elementos
+
+Se recomienda entrar a:
+
+[Flexbox Froggy](https://flexboxfroggy.com/#es)
+
+~~~
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+}
+
+.color {
+    background-color: #565f89;
+}
+
+.primero {
+    /* Con este podemos manipular el orden */
+    order: 1;
+    /*Los valores crecen de manera Dinamica*/
+    flex-grow: 1;
+    /* Primero se organiza en este ancho establecido y luego aplica el flex-grow*/
+    /* flex-basis: 120px; */
+    /* Forma corta de escribirlo, primero el grow seguido de basis */
+    flex: 1 120px;
+}
+
+.segundo {
+    order: 2;
+    flex-grow: 2;
+}
+.tercero {
+    order: 6;
+    flex-grow: 1;
+}
+.cuarto {
+    order: 5;
+    flex-grow: 4;
+    /* Alineacion vertical:| */
+    align-self: flex-end;
+}
+.quinto {
+    order: 4;
+    flex-grow: 1;
+}
+.sexto {
+    order: 3;
+    flex-grow: 1;
+    align-self: center;
+}
+~~~

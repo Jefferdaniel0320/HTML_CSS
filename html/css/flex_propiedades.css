@@ -1,0 +1,25 @@
+body {
+    width: 200px;
+    background-color: #1a1b26;
+    color: #9ece6a;
+}
+
+.flex {
+    display: flex;
+    /* Se puede jugar con la direccion de esta: */
+    /* flex-direction: column; */
+    /* Este hace que salte de linea cuando se supera el width:*/
+    /* flex-wrap: wrap; */
+    /* forma resumidad de la propiedad: */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /* align-items: flex-start; */
+    height: 200px;
+    /* Alinea todo el contenido de forma uniforme: */
+    align-content: space-evenly;  
+
+}
+
+.color {
+    background-color: #565f89;
+}
