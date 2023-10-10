@@ -1,0 +1,33 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #000;
+    color: #ff9e64;
+    font-size: 18px;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(3, 50px);
+    grid-gap: 5px;
+    /*Aca se mueve la posicion de toda la grilla:*/
+    justify-content: center;
+    /*Espacioado entre las columnas*/
+    justify-content: start;
+    /*Justificar sobre el eje vertical*/
+    /* Para colocarlo, se debe agregar height a todas las etiquetas */
+    /*center, space-around, space-between, space-evenly*/
+    align-content: space-evenly; 
+
+}
+
+.red {
+    background-color: #f7768e;
+    color: #1a1b26;
+}

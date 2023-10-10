@@ -708,6 +708,43 @@ Asignacion de nombres a la linea de la grilla con Repeat
     grid-row: row-inicio / row-fin 3;
 }
 ~~~
-Areas de Grila y grilla implicita
+Areas de Grila y grilla implicita, alineacion de elementos y de un solo elemento
+~~~
+.grid {
+    display: grid;
+    grid-template-areas: "header header"
+                        "content sidebar"
+                        "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    /* Para las grillas implicitas */
+    grid-auto-rows: 140px;
+    grid-auto-flow: row; /*Esto dice si crece hacia la Izq o Der*/
+    justify-items: stretch; /*se puede usar stretch para usar todo el espacio*/
+    align-items: stretch;
+}
+
+.red {
+    background-color: #f7768e;
+    color: #1a1b26;
+}
+.blue {
+    background-color: #7aa2f7;
+    color: #1a1b26;
+}
+
+.header {
+    grid-column: col-inicio / col-fin 3;
+    grid-row: row-inicio / row-fin 3;
+}
+
+.item-1 {
+    justify-self: center; /*Esto es para alinear en horizontal un solo elelmentos de la grilla*/
+    align-self: center; /*Alineacion vertical*/
+}
+~~~
+Alineando la grilla completa
+Se recomienda entrar a 
+[CSS Grid Garden](https://cssgridgarden.com/#es)
 ~~~
 ~~~
