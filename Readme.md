@@ -744,7 +744,44 @@ Areas de Grila y grilla implicita, alineacion de elementos y de un solo elemento
 }
 ~~~
 Alineando la grilla completa
-Se recomienda entrar a 
+
+Se recomienda entrar a:
+
 [CSS Grid Garden](https://cssgridgarden.com/#es)
 ~~~
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #000;
+    color: #ff9e64;
+    font-size: 18px;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(3, 50px);
+    grid-gap: 5px;
+    /*Aca se mueve la posicion de toda la grilla:*/
+    justify-content: center;
+    /*Espacioado entre las columnas*/
+    justify-content: start;
+    /*Justificar sobre el eje vertical*/
+    /* Para colocarlo, se debe agregar height a todas las etiquetas */
+    /*center, space-around, space-between, space-evenly*/
+    align-content: space-evenly; 
+
+}
+
+.red {
+    background-color: #f7768e;
+    color: #1a1b26;
+}
 ~~~
+### Flexbox
+Flexbox (Flexible Box Layout) es un modelo de diseño en CSS que se utiliza para crear diseños de páginas web más eficientes y flexibles. Con Flexbox, puedes organizar elementos en una fila o columna, controlar la distribución del espacio disponible, centrar elementos fácilmente y reorganizarlos automáticamente en función del espacio disponible en el contenedor. Es especialmente útil para crear diseños responsivos y complejos, y proporciona un mayor control sobre la alineación y el espaciado de los elementos en una interfaz web. Flexbox simplifica la creación de diseños complejos que antes requerían un CSS más complicado y ofrece una manera más intuitiva de manejar la disposición de elementos en una página web.
